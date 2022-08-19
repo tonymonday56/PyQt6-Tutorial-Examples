@@ -32,7 +32,7 @@ class Example(QWidget):
         sld.valueChanged[int].connect(self.changeValue)
 
         self.label = QLabel(self)
-        self.label.setPixmap(QPixmap('mute.png'))
+        self.label.setPixmap(QPixmap('C:\\Users\\tony_\\Google Drive\\Python\\Projects\\PyQt6-Tutorial-Examples\\widgets2\\mute.png'))
         self.label.setGeometry(250, 40, 80, 30)
 
         self.setGeometry(300, 300, 350, 250)
@@ -44,16 +44,16 @@ class Example(QWidget):
 
         if value == 0:
 
-            self.label.setPixmap(QPixmap('mute.png'))
+            self.label.setPixmap(QPixmap('C:\\Users\\tony_\\Google Drive\\Python\\Projects\\PyQt6-Tutorial-Examples\\widgets2\\mute.png'))
         elif 0 < value <= 30:
 
-            self.label.setPixmap(QPixmap('min.png'))
+            self.label.setPixmap(QPixmap('C:\\Users\\tony_\\Google Drive\\Python\\Projects\\PyQt6-Tutorial-Examples\\widgets2\\min.png'))
         elif 30 < value < 80:
 
-            self.label.setPixmap(QPixmap('med.png'))
+            self.label.setPixmap(QPixmap('C:\\Users\\tony_\\Google Drive\\Python\\Projects\\PyQt6-Tutorial-Examples\\widgets2\\med.png'))
         else:
 
-            self.label.setPixmap(QPixmap('max.png'))
+            self.label.setPixmap(QPixmap('C:\\Users\\tony_\\Google Drive\\Python\\Projects\\PyQt6-Tutorial-Examples\\widgets2\\max.png'))
 
 
 def main():
